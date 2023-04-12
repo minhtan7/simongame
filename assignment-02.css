@@ -1,0 +1,145 @@
+:root{
+    --green:#64c51b;
+    --green-hover:#c3ff96;
+    --red: #e50001;
+    --red-hover: #ffa5a5;
+    --yellow: #f5da58;
+    --yellow-hover: #fdf3bf;
+    --blue: #368aeb;
+    --blue-hover:  #c2dcfb;
+}
+
+body{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Orbitron', sans-serif;
+}
+#main{
+    height: 250px;
+    width: 250px;
+    position: relative;
+    background-color: aliceblue;
+}
+
+#result{
+    width: 250px;
+    height: 250px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.play-btn{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.play-btn div{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    z-index: 5;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.top-left{
+    top: 0;
+    left: 0;
+    transform: translate(-50%,-50%);
+}
+#top-left{
+    background-color: var(--green);
+}
+
+.top-right{
+    top: 0;
+    right: 0;
+    transform: translate(50%,-50%);
+}
+
+#top-right{
+    background-color: var(--red);
+}
+
+.bot-left{
+    bottom: 0;
+    left: 0;
+    transform: translate(-50%,50%);
+}
+#bot-left{
+    background-color: var(--yellow);
+}
+
+.bot-right{
+    bottom: 0;
+    right: 0;
+    transform: translate(50%,50%);
+}
+#bot-right{
+    background-color: var(--blue);
+}
+#result button{
+    font-family: 'Orbitron', sans-serif;  
+    font-size: 20px;      
+}
+
+
+#result .left{
+    font-family: 'Orbitron', sans-serif;
+
+}
+
+#result .start{
+    font-family: 'Orbitron', sans-serif;
+    cursor: pointer;
+}
+
+#result .right{
+    font-family: 'Orbitron', sans-serif;
+}
+
+#light{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 10px;
+}
+.start-light{
+    background-color: var(--green);
+}
+.stop-light{
+    background-color: var(--red);
+}
+#top-left.flash{
+    background-color: var(--green-hover)!important;
+}
+#top-right.flash{
+    background-color: var(--red-hover)!important;
+}
+#bot-right.flash{
+    background-color: var(--blue-hover)!important;
+}
+#bot-left.flash{
+    background-color: var(--yellow-hover)!important;
+}
+
